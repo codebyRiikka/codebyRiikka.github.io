@@ -1,3 +1,4 @@
+// Script for the accordion section
 document.addEventListener('DOMContentLoaded', function() 
         {
             var accButtons = document.querySelectorAll('.accordion-button');
@@ -75,3 +76,51 @@ document.addEventListener('DOMContentLoaded', function()
                 panel.style.maxHeight = panel.scrollHeight + 'px';
             }
         }
+
+
+        //Here is functionality for the portfolio images
+        const imageList = 
+        {
+            1: ["Images/tervetuloaph.png", "Images/escaperoomPuzzle1.png", "Images/escroomFirstpuzzle.png", "Images/puzzlehint.png", "Images/gratzEscaped.png", "Images/adminpassword.png", "Images/admintoolspage.png", "Images/lisaapakohuone.png"]
+        }
+
+        const currentImageIndex =
+        {
+            1: 0
+        }
+
+        function showImage(projectId)
+        {
+            const imgElement = document.getElementById(`portfolio-img-${projectId}`);
+            imgElement.src = imageList[projectId][currentImageIndex[projectId]];
+        }
+
+        function nextImage(projectId)
+        {
+            currentImageIndex[projectId] = (currentImageIndex[projectId] + 1) % imageList[projectId].length;
+            showImage(projectId);
+        }
+
+        function previousImage(projectId) 
+        {
+            currentImageIndex[projectId] = (currentImageIndex[projectId] - 1 + imageList[projectId].length) % imageList[projectId].length;
+            showImage(projectId);
+        }
+
+        //Event listeners for the buttons (next & previous)
+        document.querySelectorAll('.portfolio-item').forEach(function(item, index) 
+        {
+            const projectId = index;
+            
+            item.querySelector('button[onclick^="previousImage"]').addEventListener('click', function() 
+            {
+                previousImage(projectId);
+            });
+    
+            item.querySelector('button[onclick^="nextImage"]').addEventListener('click', function() 
+            {
+                nextImage(projectId);
+            });
+
+            showImage(projectId);
+        });
