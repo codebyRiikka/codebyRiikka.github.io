@@ -79,7 +79,7 @@
         <h2>My Projects</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img id="portfolio-img-1" src="Images/tervetuloaph.png" alt="description">
+                <img id="portfolio-img-1" src="Images/tervetuloaph.png" alt="description" onclick="openModal(1)">
                 <div class="button-container">
                     <button onclick="previousImage(1)">Previous</button>
                     <button onclick="nextImage(1)">Next</button>
@@ -96,14 +96,63 @@
                 <a href="https://github.com/codebyRiikka/PAKOHUONEPELI">GitHub Repository</a>
             </div>
             <div class="portfolio-item">
-                <img src="imagelink HERE" alt="description">
-                <h3>HEADLINE</h3>
-                <p>Coming soon</p>
-                <a href="github repo link here??">GitHub Repository</a>
+                <img id="portfolio-img-2" src="Images/phonebookMainpage.png" alt="description" onclick="openModal(2)">
+                <div class="button-container">
+                    <button onclick="previousImage(2)">Previous</button>
+                    <button onclick="nextImage(2)">Next</button>
+                </div>
+                <h3>Phonebook task in FS-course</h3>
+                <p>In this task, the goal was to great a phonebook where the contact information is stored on a server. All new contacts are saved to the server. <br><br>
+                    Other features include searching for a contact in the phonebook using a search field, updating existing contact information, and deleting a contact.<br><br>
+                    HTML, CSS and React used in this task.<br><br>
+                </p>
+                <a href="https://github.com/codebyRiikka/fullstack-webdev-exercises/tree/main/osa2/puhelinluettelo">GitHub Repository</a>
+            </div>
+            <div class="portfolio-item">
+                <img id="portfolio-img-3" src="Images/country-information.png" alt="description" onclick="openModal(3)">
+                <div class="button-container">
+                    <button onclick="previousImage(3)">Previous</button>
+                    <button onclick="nextImage(3)">Next</button>
+                </div>
+                <h3>Information of Countries-task in FS-course</h3>
+                <p>In this task, the goal was to utilize the https://studies.cs.helsinki.fi/restcountries/ service, which provides information about countries in a machine-readable format (REST API).<br><br>
+                    The task was to implement an application that retrieves data from this interface for the user. Features included filtering search results
+                    using a search field, displaying up to 10 different countries at a time, and obtaining information about a specific country by clicking on it
+                    or refining the search to a specific country. The information displayed includes the country's capital, population,spoken languages and
+                    realtime weather report.<br><br>
+                    HTML, CSS and React used in this task.<br><br>
+                </p>
+                <a href="https://github.com/codebyRiikka/fullstack-webdev-exercises/tree/main/osa2/InformationOfCountries">GitHub Repository</a>
+            </div>
+            <div class="portfolio-item">
+                <img id="portfolio-img-4" src="" alt="description" onclick="openModal(4)">
+                <div class="button-container">
+                    <button onclick="previousImage()">Previous</button>
+                    <button onclick="nextImage()">Next</button>
+                </div>
+                <h3>Coming soon</h3>
+                <p>
+                    <br><br>
+                    Description coming soon
+                    <br><br>
+                </p>
+                <a href="">GitHub Repository</a>
             </div>
             <!-- Additional projects can be added here following the same structure -->
         </div>
     </section>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image-container">
+                <img id="modal-img" src="" alt="Fullscreen image">
+            </div>
+            <button class="prev" onclick="modalPreviousImage()">&#10094;</button>
+            <button class="next" onclick="modalNextImage()">&#10095;</button>
+        </div>
+    </div>
+
     <section id="about" class="content-section">
         <div class="accordion">
             <button class="accordion-button">About</button>
