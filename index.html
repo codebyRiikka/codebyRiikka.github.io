@@ -22,7 +22,7 @@
         </nav>
     </header>
     <section class="content-section">
-        <div class="about-grid">
+        <div id="about" class="about-grid">
             <div class="about-education">
                 <div>
                     <h2>About Me</h2>
@@ -79,7 +79,7 @@
         <h2>My Projects</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img id="portfolio-img-1" src="Images/tervetuloaph.png" alt="description" onclick="openModal(1)">
+                <img id="portfolio-img-1" src="Images/tervetuloaph.png" alt="Images of escaperoom project" onclick="openModal(1)">
                 <div class="button-container">
                     <button onclick="previousImage(1)">Previous</button>
                     <button onclick="nextImage(1)">Next</button>
@@ -96,7 +96,7 @@
                 <a href="https://github.com/codebyRiikka/PAKOHUONEPELI">GitHub Repository</a>
             </div>
             <div class="portfolio-item">
-                <img id="portfolio-img-2" src="Images/phonebookMainpage.png" alt="description" onclick="openModal(2)">
+                <img id="portfolio-img-2" src="Images/phonebookMainpage.png" alt="Images of phonebook task" onclick="openModal(2)">
                 <div class="button-container">
                     <button onclick="previousImage(2)">Previous</button>
                     <button onclick="nextImage(2)">Next</button>
@@ -109,7 +109,7 @@
                 <a href="https://github.com/codebyRiikka/fullstack-webdev-exercises/tree/main/osa2/puhelinluettelo">GitHub Repository</a>
             </div>
             <div class="portfolio-item">
-                <img id="portfolio-img-3" src="Images/country-information.png" alt="description" onclick="openModal(3)">
+                <img id="portfolio-img-3" src="Images/country-information.png" alt="Images of countries information task" onclick="openModal(3)">
                 <div class="button-container">
                     <button onclick="previousImage(3)">Previous</button>
                     <button onclick="nextImage(3)">Next</button>
@@ -125,18 +125,15 @@
                 <a href="https://github.com/codebyRiikka/fullstack-webdev-exercises/tree/main/osa2/InformationOfCountries">GitHub Repository</a>
             </div>
             <div class="portfolio-item">
-                <img id="portfolio-img-4" src="" alt="description" onclick="openModal(4)">
+                <img id="portfolio-img-4" src="" alt="" onclick="openModal(4)">
                 <div class="button-container">
                     <button onclick="previousImage()">Previous</button>
                     <button onclick="nextImage()">Next</button>
                 </div>
                 <h3>Coming soon</h3>
                 <p>
-                    <br><br>
-                    Description coming soon
-                    <br><br>
                 </p>
-                <a href="">GitHub Repository</a>
+                <a href="">Coming soon</a>
             </div>
             <!-- Additional projects can be added here following the same structure -->
         </div>
@@ -152,40 +149,10 @@
             <button class="next" onclick="modalNextImage()">&#10095;</button>
         </div>
     </div>
-
-    <section id="about" class="content-section">
-        <div class="accordion">
-            <button class="accordion-button">About</button>
-            <div class="panel">
-                <p> Details about this section goes here </p>
-                <!-- TAB LINKS -->
-                <div class="tab-links">
-                    <button class="tab-link" onclick="openTab(event, 'Stuff1')">Stuff1</button>
-                    <button class="tab-link" onclick="openTab(event, 'Stuff2')">Stuff2</button>
-                    <button class="tab-link" onclick="openTab(event, 'Stuff3')">Stuff3</button>
-                </div>
-                <!-- TAB CONTENT -->
-                <div id="Stuff1" class="tab-content">
-                    <p>Detailed description about stuff1 here</p>
-                </div>
-                <div id="Stuff2" class="tab-content">
-                    <p>Detailed description about stuff2 here</p>
-                </div>
-                <div id="Stuff3" class="tab-content">
-                    <p>Detailed description about stuff3 here</p>
-                </div>
-            </div>
-            <button class="accordion-button">More About</button>
-            <div class="panel">
-                <p>About description inside these tags here</p>
-            </div>
-            <!-- Here you can add more of the accordion "buttons" and the content inside of it-->
-        </div>
-    </section>
     <section id="contact" class="content-section">
         <h2>Contact Me</h2>
         <div class="contact-info">
-            <p>If you wish to reach out to me, feel free to contact me via email or connect with me on LinkedIn.</p>
+            <p>If you wish to reach out to me, feel free to contact me via email or connect in LinkedIn.</p>
             <p><strong>Email:</strong> <a href="mailto:your.email@example.com">rixuuu95@gmail.com</a></p>
             <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/riikka-luostarinen-921734307/" target="_blank">Riikka Luostarinen</a></p>
         </div>
