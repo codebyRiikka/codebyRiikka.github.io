@@ -1,0 +1,34 @@
+@import "/node_modules/slick-carousel/slick/slick.css";
+@import "/node_modules/slick-carousel/slick/slick-theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.slick-prev, .slick-next {
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: transparent;
+}
+
+.slick-prev {
+  left: -20px; 
+}
+
+.slick-next {
+  right: -20px; 
+}
