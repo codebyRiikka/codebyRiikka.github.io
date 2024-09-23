@@ -10,7 +10,7 @@ function Header() {
         
         {/* Name and pic on the right side */}
         <div className="md:w-1/2 flex flex-col items-center md:items-start justify-center text-center md:text-left space-y-8 pt-8 md:pt-[50px] md:pl-[110px]" data-aos="fade-right">
-          <h1 className="text-6xl md:text-7xl font-extrabold tracking-widest text-shadow-lg" style={{ fontFamily: "'Open Sans', sans-serif", fontWeight: "600", fontStyle: "normal", textShadow: "3px 3px 8px rgba(0, 0, 0, 0.3)" }}>
+          <h1 className="text-4xl md:text-7xl font-extrabold tracking-widest text-shadow-lg" style={{ fontFamily: "'Open Sans', sans-serif", fontWeight: "600", fontStyle: "normal", textShadow: "3px 3px 8px rgba(0, 0, 0, 0.3)" }}>
             Riikka Luostarinen
           </h1>
           <img src="Images/cvpic.jpg" alt="Your Picture" className="w-36 h-36 md:w-52 md:h-52 rounded-full border-0 border-white object-cover transform transition-transform duration-500 hover:scale-110 hover:rotate-2" style={{ boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.3)" }}/>
